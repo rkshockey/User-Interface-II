@@ -61,7 +61,7 @@ body {
     color:#4f4f4f;
     line-height:1.5;
     font-family: 'Montserrat', sans-serif;
-    background:#b4eeca
+    background:#80d3a0
     /*#b4eeca*/
 }
 h1 {
@@ -208,6 +208,24 @@ a.here:hover {
     margin: 5% 0;
 }
 
+/*Contact page styling*/
+.contact h2 {
+    text-align: center;
+}
+.contact .flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact img, .content p{
+    width: 20%;
+    margin:10% 0;
+}
+.contact a{
+    color:blue;
+    text-decoration: underline;
+}
+
 /*tablet styling*/
 @media (max-width:760px) {
     body {
@@ -246,5 +264,12 @@ a.here:hover {
     }
     .about img, .about p{
         width: 80%
+    }
+    .contact .flex{
+        flex-direction: column;
+    }
+    .contact img, .contact p{
+        width: 80%;
+        text-align:center;
     }
 }
