@@ -90,6 +90,11 @@ header {
     justify-content: space-around;
 }
 
+@keyframes flip {
+    0% {transform: rotate (0deg);}
+    100% {transform: rotate(360deg);}
+}
+
 .head-button a{
     width:40%;
     background: lightgrey;
@@ -98,10 +103,18 @@ header {
     text-align: center;
     padding: 2%;
 }
+.head-button a:hover {
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
 
 .head-button .here {
     background: black;
     color: white;
+}
+.head-button .here:hover {
+    animation: none;
 }
 
 /*splash styling*/
@@ -128,6 +141,17 @@ header {
     border-radius: 25%;
     border: 2px solid #E0115F;
     font-weight: bold;
+}
+
+@keyframes grow {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+.splash a:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
 }
 
 /*gallery styling*/
@@ -162,7 +186,13 @@ footer a{
     padding: 1%;
     background: lightgrey;
     border: 2px solid darkolivegreen;
+    border-radius: 15%;
 }
+
+footer a:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
 
 /*tablet styling*/
 @media (max-width:760px) {
