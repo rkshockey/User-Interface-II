@@ -194,6 +194,20 @@ a.here:hover {
     animation: none;
 }
 
+/*About page styling*/
+.about h2 {
+    text-align: center;
+}
+.about .left, .about .right {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.about img, .about p{
+    width: 30%;
+    margin: 5% 0;
+}
+
 /*tablet styling*/
 @media (max-width:760px) {
     body {
@@ -223,5 +237,14 @@ a.here:hover {
     }
     .gallery-item {
         width: 80%;
+    }
+    .about .left {
+        flex-direction: column;
+    }
+    .about .right {
+        flex-direction: column-reverse;
+    }
+    .about img, .about p{
+        width: 80%
     }
 }
