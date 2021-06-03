@@ -226,6 +226,21 @@ a.here:hover {
     text-decoration: underline;
 }
 
+/*Project page styling*/
+.projects {
+    text-align: center;
+}
+.between {
+    display:flex;
+    justify-content: space-between;
+    margin: 5%
+}
+.around {
+    display:flex;
+    justify-content: space-around;
+    margin: 5%
+}
+
 /*tablet styling*/
 @media (max-width:760px) {
     body {
@@ -271,5 +286,8 @@ a.here:hover {
     .contact img, .contact p{
         width: 80%;
         text-align:center;
+    }
+    .between, .around {
+        flex-direction: column;
     }
 }
