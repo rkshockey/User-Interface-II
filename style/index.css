@@ -61,7 +61,8 @@ body {
     color:#4f4f4f;
     line-height:1.5;
     font-family: 'Montserrat', sans-serif;
-    background:#cdebd9
+    background:#b4eeca
+    /*#b4eeca*/
 }
 h1 {
     font-family: 'Kaushan Script', cursive;
@@ -161,4 +162,36 @@ footer a{
     padding: 1%;
     background: lightgrey;
     border: 2px solid darkolivegreen;
+}
+
+/*tablet styling*/
+@media (max-width:760px) {
+    body {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/*mobile styling*/
+@media (max-width:500px) {
+    body {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery-item {
+        width: 80%;
+    }
 }
