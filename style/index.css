@@ -61,15 +61,16 @@ body {
     color:#4f4f4f;
     line-height:1.5;
     font-family: 'Montserrat', sans-serif;
-    background:#d8e6d2
+    background:#cdebd9
 }
 h1 {
     font-family: 'Kaushan Script', cursive;
     font-size: 7rem;
+    color: #0822cc
 }
 h2 {
     font-family: 'Kaushan Script', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 a {
@@ -100,4 +101,64 @@ header {
 .head-button .here {
     background: black;
     color: white;
+}
+
+/*splash styling*/
+
+.splash {
+    margin: 10%;
+    margin-top: 0;
+    height:60vh;
+    background-image: url(../assets/dancing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash a{
+    margin: 1%;
+    padding: 1%;
+    background: #8a8c84;
+    color: #0822cc;
+    border-radius: 25%;
+    border: 2px solid #E0115F;
+    font-weight: bold;
+}
+
+/*gallery styling*/
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-content:space-around;
+}
+
+.gallery-item {
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+/*footer styling*/
+footer {
+    background-image: url(../assets/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin:auto;
+    padding: 1%;
+    background: lightgrey;
+    border: 2px solid darkolivegreen;
 }
