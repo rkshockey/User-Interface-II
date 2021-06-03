@@ -79,5 +79,25 @@ a {
 
 /*header styling*/
 header {
-    
+    padding:4%;
+    display:flex;
+    justify-content: space-between;
+}
+.head-button {
+    display:flex;
+    justify-content: space-around;
+}
+
+.head-button a{
+    width:40%;
+    background: lightgrey;
+    border: 2px solid darkolivegreen;
+    margin:1%;
+    text-align: center;
+    padding: 2%;
+}
+
+.head-button .here {
+    background: black;
+    color: white;
 }
