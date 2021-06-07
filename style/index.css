@@ -66,12 +66,12 @@ body {
 }
 h1 {
     font-family: 'Kaushan Script', cursive;
-    font-size: 7rem;
+    font-size: 4rem;
     color: #0822cc
 }
 h2 {
     font-family: 'Kaushan Script', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 a {
@@ -83,11 +83,19 @@ a {
 header {
     padding:4%;
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+header h2 {
+    font-size: 3rem;
 }
 .head-button {
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    width: 60%;
 }
 
 @keyframes flip {
@@ -157,7 +165,7 @@ header {
 .gallery-item {
     display:flex;
     flex-direction: column;
-    width: 30%;
+    width: 45%;
     align-items: center;
     margin-bottom: 2%;
 }
@@ -204,13 +212,13 @@ a.here:hover {
     align-items:center;
 }
 .about .left div, .about .right div{
-    width: 30%
-}
-.about img.mobile {
-    display: none
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
 }
 .about p{
-    width: 30%;
+    width: 45%;
     margin: 5% 0;
 }
 
@@ -222,10 +230,12 @@ a.here:hover {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
-.contact img, .content p{
-    width: 20%;
-    margin:10% 0;
+.contact img, .contact p{
+    width: 45%;
+    margin:10% 2%;
+    text-align: center;
 }
 .contact a{
     color:blue;
@@ -247,71 +257,57 @@ a.here:hover {
     margin: 5%
 }
 
-/*tablet styling*/
-@media (max-width:800px) {
-    body {
-        font-size: 1.6rem;
+.construction {
+    display: none;
+}
+
+/*Tablet styling*/
+@media (min-width: 500px){
+    .gallery-item{
+        width: 30%;
     }
+
+    /*About Page tablet*/
+    img.mobile{
+        display: none;
+    }
+
+    /*Projects page tablet*/
+    .construction {
+        display: inline;
+    }
+}
+
+@media (min-width:550px) {
+    header {
+        flex-direction: row;
+    }
+    .head-button {
+        flex-direction: row;
+        width: 60%;
+    }
+}
+
+/*Desktop styling*/
+@media (min-width:800px){
     h1 {
         font-size: 5rem;
     }
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-    .about .left div, .about .right div, .about p{
-        width: 45%
+    /*About desktop*/
+    .about .left div, .about .right div{
+        width: 30%;
     }
+    /*Contact desktop*/
+    .contact img, .contact p{
+        width: 20%;
 }
 
-/*mobile styling*/
-@media (max-width:500px) {
-    body {
-        font-size: 1.6rem;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header h2 {
-        font-size: 3rem;
-    }
-    .head-button {
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    }
-    .head-button a{
-        width: 100%;
-        padding: 5%;
-    }
-    .gallery-item {
-        width: 40%;
-    }
-    .about img.mobile{
-        display:inline;
-    }
-    .about .left div, .about .right div{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
+/*Widescreen styling*/
+@media (min-width:1200px){
     .about p{
-        width: 40%;
-    }
-    .contact .flex{
-        flex-wrap: wrap;
-    }
-    .contact img, .contact p{
-        width: 45%;
-        text-align:center;
-    }
-    .between .gallery-item, .around .gallery-item{
         width: 30%;
     }
 }
