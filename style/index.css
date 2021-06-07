@@ -266,10 +266,10 @@ a.here:hover {
         font-size: 1.3rem;
     }
     .gallery {
-        flex-direction: column;
+        flex-direction: row;
     }
     .gallery-item {
-        width: 80%;
+        width: 40%;
     }
     .about .left {
         flex-direction: column;
