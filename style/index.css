@@ -244,50 +244,57 @@ a.here:hover {
 /*tablet styling*/
 @media (max-width:760px) {
     body {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
     h1 {
         font-size: 5rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 /*mobile styling*/
 @media (max-width:500px) {
     body {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     h1 {
         font-size: 3rem;
     }
     h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
-    .gallery {
-        flex-direction: row;
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h2 {
+        font-size: 3rem;
+    }
+    .head-button {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .head-button a{
+        width: 100%;
+        padding: 5%;
     }
     .gallery-item {
         width: 40%;
     }
-    .about .left {
-        flex-direction: column;
-    }
-    .about .right {
-        flex-direction: column-reverse;
     }
     .about img, .about p{
-        width: 80%
+        width: 45%;
     }
     .contact .flex{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .contact img, .contact p{
-        width: 80%;
+        width: 45%;
         text-align:center;
     }
-    .between, .around {
-        flex-direction: column;
-    }
+    .between .gallery-item, .around .gallery-item{
+        width: 30%;
 }
