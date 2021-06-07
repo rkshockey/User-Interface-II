@@ -203,7 +203,13 @@ a.here:hover {
     justify-content: space-around;
     align-items:center;
 }
-.about img, .about p{
+.about .left div, .about .right div{
+    width: 30%
+}
+.about img.mobile {
+    display: none
+}
+.about p{
     width: 30%;
     margin: 5% 0;
 }
@@ -242,7 +248,7 @@ a.here:hover {
 }
 
 /*tablet styling*/
-@media (max-width:760px) {
+@media (max-width:800px) {
     body {
         font-size: 1.6rem;
     }
@@ -251,6 +257,9 @@ a.here:hover {
     }
     h2 {
         font-size: 2.5rem;
+    }
+    .about .left div, .about .right div, .about p{
+        width: 45%
     }
 }
 
@@ -284,9 +293,16 @@ a.here:hover {
     .gallery-item {
         width: 40%;
     }
+    .about img.mobile{
+        display:inline;
     }
-    .about img, .about p{
-        width: 45%;
+    .about .left div, .about .right div{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .about p{
+        width: 40%;
     }
     .contact .flex{
         flex-wrap: wrap;
